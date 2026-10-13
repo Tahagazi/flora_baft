@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+    <!-- meta tags -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora | گل‌های بافتنی دست‌ساز</title>
+    <meta name="description" content="گل‌های بافتنی دست‌ساز فلورا؛ هدیه‌هایی ماندگار با رنگ‌ها و طرح‌های دوست‌داشتنی. مدل‌های مختلف گل بافتنی را ببینید و دسته‌گل دلخواهتان را انتخاب کنید.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Flora">
+    <meta name="theme-color" content="#F8E9ED">
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Flora">
+    <meta property="og:title" content="Flora | گل‌های بافتنی دست‌ساز">
+    <meta property="og:description" content="گل‌های بافتنی دست‌ساز و دسته‌گل‌های خاص برای هدیه دادن به عزیزانتان.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+    <meta property="og:image" content="static/images/og_flora.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="دسته‌گل‌های بافتنی دست‌ساز فلورا با رنگ‌های ملایم و بسته‌بندی ظریف">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flora | گل‌های بافتنی دست‌ساز">
+    <meta name="twitter:description" content="گل‌های بافتنی دست‌ساز؛ هدیه‌هایی ماندگار و متفاوت.">
+    <meta name="twitter:image" content="static/images/og_flora.webp">
+    <meta name="twitter:image:alt" content="دسته‌گل‌های بافتنی دست‌ساز فلورا">
+
+    <!-- theme save -->
+
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+
+    <!-- fave icon -->
+
+    <link rel="icon" href="static/faveicon/favicon.ico" sizes="any">
+    <link rel="icon" href="static/faveicon/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="static/faveicon/favicon-96x96.png" type="image/png" sizes="96x96">
+
+    <link rel="apple-touch-icon" href="static/faveicon/apple-touch-icon.png">
+
+    <link rel="manifest" href="static/faveicon/site.webmanifest">
+
+    <!-- theck in use -->
+
+    <link rel="stylesheet" href="static/css/output.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/data.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="static/swiper/swiper.min.css">
+    <script src="static/swiper/swiper.min.js"></script>
+
+    <!-- Alpine.js -->
+    <script defer src="static/collapse.js"></script>
+    <script defer src="static/alpine.js"></script>
+</head>
+
+<body x-data="shopApp()">
+
+<!-- ================= ICON SPRITE ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+        <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+        <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3M14 2v4M8 10v4M16 18v4"/></symbol>
+        <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+        <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+        <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+        <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></symbol>
+        <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5"/></symbol>
+        <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+        <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+        <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"/></symbol>
+        <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+        <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></symbol>
+        <symbol id="i-cake" viewBox="0 0 24 24"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1M2 21h20M7 8v3M12 8v3M17 8v3M7 4h.01M12 4h.01M17 4h.01"/></symbol>
+        <symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+        <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6M2 9h20"/></symbol>
+        <symbol id="i-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+        <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-2.93 1.41-1.41m11.32-11.32 1.41-1.41M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41"/></symbol>
+        <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+        <symbol id="i-flower" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 16.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 1 1-4.5 4.5"/><path d="M12 7.5V9M7.5 12H9M16.5 12H15M12 16.5V15m-4-7 1.88 1.88M14.12 9.88 16 8M8 16l1.88-1.88M14.12 14.12 16 16"/></symbol>
+    </defs>
+</svg>
+
+<div class="overlay" :class="{ 'is-open': anyOverlay }" @click="closeAll()"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="container-x header-inner">
+        <button type="button" class="icon-btn" @click="menuOpen = true" aria-label="باز کردن منو">
+            <svg class="icon icon-lg"><use href="#i-menu"/></svg>
+        </button>
+        <a href="#top" class="brand">
+            <svg class="icon icon-lg"><use href="#i-flower"/></svg>
+            <span>Flora</span>
+        </a>
+        <button type="button" class="icon-btn" @click="contactOpen = true" aria-label="تماس با ما">
+            <svg class="icon icon-lg"><use href="#i-phone"/></svg>
+        </button>
+    </div>
+</header>
+
+<!-- ================= MOBILE MENU ================= -->
+<aside class="panel" :class="menuOpen ? 'translate-x-0' : 'translate-x-full'" :aria-hidden="!menuOpen" aria-label="منو">
+    <div class="panel-head">
+        <span class="brand"><svg class="icon icon-lg"><use href="#i-flower"/></svg><span>Flora</span></span>
+        <button type="button" class="icon-btn" @click="menuOpen = false" aria-label="بستن منو"><svg class="icon"><use href="#i-x"/></svg></button>
+    </div>
+    <nav class="panel-body menu-links">
+        <template x-for="link in menuLinks" :key="link.label">
+            <a :href="link.href" class="menu-link" :class="{ 'is-active': menuActive === link.label }" @click="menuActive = link.label; menuOpen = false">
+                <svg class="icon"><use :href="'#i-' + link.icon"/></svg>
+                <span x-text="link.label"></span>
+            </a>
+        </template>
+        <button type="button" class="menu-link" @click="menuOpen = false; contactOpen = true">
+            <svg class="icon"><use href="#i-phone"/></svg><span>ارتباط با ما</span>
+        </button>
+    </nav>
+    <div class="panel-foot">
+        <button type="button" class="btn btn-primary btn-block" @click="toggleTheme()">
+            <svg class="icon icon-sm"><use :href="theme === 'dark' ? '#i-sun' : '#i-moon'"/></svg>
+            <span x-text="theme === 'dark' ? 'حالت روشن' : 'حالت تیره'"></span>
+        </button>
+    </div>
+</aside>
+
+<main id="top">
+    <div class="container-x">
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1 class="hero-title">گل‌هایی که<br>ماندگار می‌مانند..</h1>
+                <p class="hero-sub">بافته شده با عشق، برای لحظه‌های خاص و آدم‌های خاص</p>
+                <a href="#products" class="btn btn-primary btn-sm">
+                    مشاهده گل ها
+                    <svg class="icon icon-sm"><use href="#i-arrow-left"/></svg>
+                </a>
+            </div>
+            <div class="hero-media img-bg" style="--img: url('../images/hero.webp')" role="img" aria-label="دسته گل بافتنی"></div>
+        </section>
+
+        <!-- ================= FILTER BAR ================= -->
+        <section id="products" class="anchor-target">
+            <div class="filter-bar" x-ref="filterBar">
+                <button type="button" class="filter-btn" @click="openDrawer()">
+                    <svg class="icon icon-sm"><use href="#i-sliders"/></svg>
+                    <span>فیلترها</span>
+                    <span class="count-badge" x-show="activeCount" x-text="fa(activeCount)"></span>
+                </button>
+
+                <template x-for="key in quickOrder" :key="key">
+                    <div class="qf" @click.outside="if (openQuick === key) openQuick = null">
+                        <div class="qf-chip" :class="{ 'is-active': isActive(key), 'is-open': openQuick === key }" :style="`anchor-name: --anchor-${key}`">
+                            <button type="button" class="qf-clear" x-show="isActive(key)" @click.stop="clearFilter(key)" aria-label="پاک کردن فیلتر">
+                                <svg class="icon icon-sm"><use href="#i-x"/></svg>
+                            </button>
+                            <button type="button" class="qf-main" @click="toggleQuick(key)" :aria-expanded="openQuick === key">
+                                <span x-text="chipLabel(key)"></span>
+                                <svg class="icon icon-sm qf-caret"><use href="#i-chevron-down"/></svg>
+                            </button>
+                        </div>
+                        <div class="dropdown" x-show="openQuick === key" x-cloak :style="`position-anchor: --anchor-${key}`"
+                             x-transition:enter="fade-fast" x-transition:enter-start="opacity-0 scale-95"
+                             x-transition:leave="fade-fast" x-transition:leave-end="opacity-0 scale-95">
+                            <template x-for="opt in defOf(key).options" :key="opt.value">
+                                <button type="button" class="dd-item" :class="{ 'is-selected': filters[key].length === 1 && filters[key][0] === opt.value }" @click="quickSelect(key, opt.value)">
+                                    <span class="dd-label">
+                                        <span class="swatch" x-show="opt.hex" :style="`background: ${opt.hex}`"></span>
+                                        <span x-text="opt.label"></span>
+                                    </span>
+                                    <svg class="icon icon-sm" x-show="filters[key].includes(opt.value)"><use href="#i-check"/></svg>
+                                </button>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <!-- ================= SORT BAR ================= -->
+            <div class="toolbar">
+                <div class="qf" @click.outside="sortOpen = false">
+                    <div class="qf-chip" :class="{ 'is-open': sortOpen }" style="anchor-name: --anchor-sort">
+                        <button type="button" class="qf-main" @click="sortOpen = !sortOpen; openQuick = null" :aria-expanded="sortOpen">
+                            <span class="sort-label">مرتب‌سازی :</span>
+                            <span x-text="currentSort.label"></span>
+                            <svg class="icon icon-sm qf-caret"><use href="#i-chevron-down"/></svg>
+                        </button>
+                    </div>
+                    <div class="dropdown" x-show="sortOpen" x-cloak style="position-anchor: --anchor-sort"
+                         x-transition:enter="fade-fast" x-transition:enter-start="opacity-0 scale-95"
+                         x-transition:leave="fade-fast" x-transition:leave-end="opacity-0 scale-95">
+                        <template x-for="s in sortOptions" :key="s.key">
+                            <button type="button" class="dd-item" :class="{ 'is-selected': sortKey === s.key }" @click="sortKey = s.key; sortOpen = false">
+                                <span x-text="s.label"></span>
+                                <svg class="icon icon-sm" x-show="sortKey === s.key"><use href="#i-check"/></svg>
+                            </button>
+                        </template>
+                    </div>
+                </div>
+                <span class="count"><span x-text="fa(displayed.length)"></span> محصول</span>
+            </div>
+
+            <!-- ================= PRODUCT GRID ================= -->
+            <div id="grid" class="anchor-target grid-products">
+                <div class="grid grid-cols-1 min-[390px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[var(--gap-md)]" x-show="pageItems.length">
+                    <template x-for="(p, i) in pageItems" :key="gridKey + '-' + p.id">
+                        <article class="card" :style="`--i: ${i}`" tabindex="0" role="button" :aria-label="p.title" @click="openProduct(p)" @keydown.enter="openProduct(p)">
+                            <div class="media media-card">
+                                <div class="ph"><svg class="icon"><use href="#i-flower"/></svg></div>
+                                <img class="media-img" :src="p.images[0]" :alt="p.title" loading="lazy" @error="$el.style.display = 'none'">
+                                <span class="badge" x-text="p.category"></span>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title" x-text="p.title"></h3>
+                                <p class="card-desc" x-text="p.description"></p>
+                                <div class="card-foot max-[480px]:!flex-col">
+                                    <div class="dots">
+                                        <template x-for="c in p.colors" :key="c.hex">
+                                            <span class="swatch" :style="`background: ${c.hex}`" :title="c.name"></span>
+                                        </template>
+                                    </div>
+                                    <span class="price"><span x-text="fa(p.price)"></span><small> تومان </small></span>
+                                </div>
+                            </div>
+                        </article>
+                    </template>
+                </div>
+
+                <!-- Empty state -->
+                <div class="empty" x-show="!pageItems.length" x-cloak>
+                    <svg class="icon"><use href="#i-flower"/></svg>
+                    <p>محصولی با این فیلترها پیدا نشد.</p>
+                    <button type="button" class="btn btn-primary btn-sm" @click="clearAll()">پاک کردن فیلترها</button>
+                </div>
+            </div>
+
+            <!-- ================= PAGINATION ================= -->
+            <nav class="pg" x-show="totalPages > 1" aria-label="صفحه‌بندی">
+                <button type="button" class="pg-btn" :disabled="page === 1" @click="goPage(page - 1)" aria-label="صفحه قبل"><svg class="icon icon-sm"><use href="#i-chevron-right"/></svg></button>
+                <template x-for="(n, idx) in pages" :key="idx">
+                    <span>
+                        <button type="button" class="pg-btn" x-show="n !== '…'" :class="{ 'is-current': n === page }" @click="goPage(n)" x-text="fa(n)"></button>
+                        <span class="pg-btn" x-show="n === '…'">…</span>
+                    </span>
+                </template>
+                <button type="button" class="pg-btn" :disabled="page === totalPages" @click="goPage(page + 1)" aria-label="صفحه بعد"><svg class="icon icon-sm"><use href="#i-chevron-left"/></svg></button>
+            </nav>
+        </section>
+
+        <!-- ================= CUSTOM ORDER BANNER ================= -->
+        <section class="section">
+            <div class="banner img-bg" style="--img: url('../images/custom.webp')">
+                <div class="banner-content">
+                    <h2 class="banner-title">ساخت اختصاصی دسته گل</h2>
+                    <p class="banner-text">با توجه به سلیقه شما، دسته گل مورد نظرتان را با رنگ و اندازه دلخواه می‌بافیم.</p>
+                    <a :href="customOrderLink" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                        ثبت سفارش اختصاصی
+                        <svg class="icon icon-sm"><use href="#i-send"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WHY ================= -->
+        <section class="section">
+            <h2 class="section-title">چرا گل‌های بافتنی؟</h2>
+            <div class="features">
+                <div class="feature"><svg class="icon"><use href="#i-sparkles"/></svg><h3>دست‌ساز</h3><p>هر گل با عشق و دقت بافته می‌شود.</p></div>
+                <div class="feature"><svg class="icon"><use href="#i-leaf"/></svg><h3>دوستدار محیط زیست</h3><p>بدون نیاز به آب، نور و خاک؛ همیشه شاداب.</p></div>
+                <div class="feature"><svg class="icon"><use href="#i-infinity"/></svg><h3>قابل شست‌وشو</h3><p>بدون نگرانی از پژمردگی و گردوغبار.</p></div>
+                <div class="feature"><svg class="icon"><use href="#i-heart"/></svg><h3>ماندگار</h3><p>ماندگاری بیشتر از گل‌های طبیعی.</p></div>
+            </div>
+        </section>
+
+        <!-- ================= OCCASIONS ================= -->
+        <section class="section">
+            <h2 class="section-title">مناسب برای...</h2>
+            <div class="occasions">
+                <template x-for="o in occasions" :key="o.label">
+                    <div class="occasion"><svg class="icon"><use :href="'#i-' + o.icon"/></svg><span x-text="o.label"></span></div>
+                </template>
+            </div>
+        </section>
+
+        <!-- ================= GIFT PACK BANNER ================= -->
+        <section class="section">
+            <div class="banner img-bg" style="--img: url('../images/gift2.webp')">
+                <div class="banner-content">
+                    <h2 class="banner-title">پکیج برای دوست‌داشتنی‌ها</h2>
+                    <p class="banner-text">با گل‌های بافتنی، یادگاری ماندگار بسازید؛ هدیه‌ای که هر روز دیده می‌شود.</p>
+                    <a href="#products" class="btn btn-primary btn-sm">مشاهده محصولات</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container-x">
+        <div class="flex flex-col items-center gap-[var(--gap-md)] md:flex-row md:justify-between">
+            <span class="brand"><svg class="icon icon-lg"><use href="#i-flower"/></svg><span>Flora</span></span>
+            <nav class="footer-links">
+                <a href="#products">محصولات</a>
+                <a href="#top">درباره ما</a>
+                <a href="#" @click.prevent="contactOpen = true">ارتباط با ما</a>
+            </nav>
+            <div class="flex gap-[var(--gap-sm)]">
+                <a class="icon-btn" :href="'https://t.me/' + contact.telegram" target="_blank" rel="noopener" aria-label="تلگرام"><svg class="icon"><use href="#i-send"/></svg></a>
+                <a class="icon-btn" :href="'https://instagram.com/' + contact.instagram" target="_blank" rel="noopener" aria-label="اینستاگرام"><svg class="icon"><use href="#i-instagram"/></svg></a>
+            </div>
+        </div>
+        <p class="footer-copy">© 2025 Flora. All rights reserved.</p>
+        <p class="footer-credit">Design &amp; Developed By MohammadTaha</p>
+    </div>
+</footer>
+
+<!-- ================= ALL FILTERS DRAWER ================= -->
+<aside class="panel" :class="drawerOpen ? 'translate-x-0' : 'translate-x-full'" :inert="!drawerOpen" aria-label="فیلترها">
+    <div class="panel-head">
+        <h2 class="panel-title">فیلترها</h2>
+        <div class="flex items-center gap-[var(--gap-sm)]">
+            <button type="button" class="text-btn" x-show="tempCount" @click="clearTemp()">پاک کردن همه</button>
+            <button type="button" class="icon-btn" @click="drawerOpen = false" aria-label="بستن"><svg class="icon"><use href="#i-x"/></svg></button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <template x-for="def in filterDefs" :key="def.key">
+            <section class="acc" :class="{ 'is-open': accOpen[def.key] }">
+                <button type="button" class="acc-head" @click="accOpen[def.key] = !accOpen[def.key]" :aria-expanded="accOpen[def.key]">
+                    <span class="acc-icon"><svg class="icon"><use :href="'#i-' + def.icon"/></svg></span>
+                    <span class="acc-title" x-text="def.title"></span>
+                    <span class="acc-count" x-show="temp[def.key].length" x-text="fa(temp[def.key].length)"></span>
+                    <svg class="icon icon-sm acc-caret"><use href="#i-chevron-down"/></svg>
+                </button>
+                <div class="acc-body">
+                    <div class="acc-inner">
+                        <div :class="def.type === 'color' ? 'opt-wrap' : 'opt-list'">
+                            <template x-for="opt in def.options" :key="opt.value">
+                                <button type="button" class="opt" :class="{ 'is-selected': temp[def.key].includes(opt.value), 'opt--pill': def.type === 'color' }" @click="toggleTemp(def.key, opt.value)" :aria-pressed="temp[def.key].includes(opt.value)">
+                                    <span class="opt-box" x-show="!opt.hex"><svg class="icon"><use href="#i-check"/></svg></span>
+                                    <span class="swatch" x-show="opt.hex" :style="`background: ${opt.hex}`"></span>
+                                    <span x-text="opt.label"></span>
+                                    <svg class="icon icon-sm" x-show="opt.hex && temp[def.key].includes(opt.value)"><use href="#i-check"/></svg>
+                                </button>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </div>
+    <div class="panel-foot">
+        <button type="button" class="btn btn-primary btn-block" @click="applyFilters()">
+            اعمال <span x-text="fa(tempCount)"></span> فیلتر
+        </button>
+    </div>
+</aside>
+
+<!-- ================= CONTACT MODAL ================= -->
+<div class="modal-wrap modal-wrap-sm" x-show="contactOpen" x-cloak @click.self="contactOpen = false"
+     x-transition:enter="fade-anim" x-transition:enter-start="opacity-0 scale-95"
+     x-transition:leave="fade-anim" x-transition:leave-end="opacity-0 scale-95">
+    <div class="modal modal-sm" role="dialog" aria-modal="true" aria-label="تماس با ما">
+        <header class="modal-head">
+            <h2 class="modal-title">تماس با ما</h2>
+            <button type="button" class="icon-btn" @click="contactOpen = false" aria-label="بستن"><svg class="icon"><use href="#i-x"/></svg></button>
+        </header>
+        <div class="modal-body" style="grid-template-columns: 1fr">
+            <div>
+                <a class="contact-row" :href="'tel:' + contact.phone"><span class="contact-ico"><svg class="icon"><use href="#i-phone"/></svg></span><span><span class="contact-label block">تلفن</span><span class="contact-value block" x-text="contact.phoneLabel"></span></span></a>
+                <a class="contact-row" :href="'https://wa.me/' + contact.whatsapp" target="_blank" rel="noopener"><span class="contact-ico"><svg class="icon"><use href="#i-whatsapp"/></svg></span><span><span class="contact-label block">واتساپ</span><span class="contact-value block" x-text="contact.phoneLabel"></span></span></a>
+                <a class="contact-row" :href="'https://t.me/' + contact.telegram" target="_blank" rel="noopener"><span class="contact-ico"><svg class="icon"><use href="#i-send"/></svg></span><span><span class="contact-label block">تلگرام</span><span class="contact-value block" x-text="'@' + contact.telegram"></span></span></a>
+                <a class="contact-row" :href="'https://instagram.com/' + contact.instagram" target="_blank" rel="noopener"><span class="contact-ico"><svg class="icon"><use href="#i-instagram"/></svg></span><span><span class="contact-label block">اینستاگرام</span><span class="contact-value block" x-text="'@' + contact.instagram"></span></span></a>
+                <a class="contact-row" :href="'mailto:' + contact.email"><span class="contact-ico"><svg class="icon"><use href="#i-mail"/></svg></span><span><span class="contact-label block">ایمیل</span><span class="contact-value block" x-text="contact.email"></span></span></a>
+            </div>
+            <p class="contact-note"><svg class="icon icon-sm"><use href="#i-clock"/></svg><span>پاسخگویی: همه روزه ۹ صبح تا ۹ شب</span></p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= PRODUCT MODAL ================= -->
+<div class="modal-wrap" x-show="modalOpen" x-cloak @click.self="closeModal()"
+     x-transition:enter="fade-anim" x-transition:enter-start="opacity-0 scale-95"
+     x-transition:leave="fade-anim" x-transition:leave-end="opacity-0 scale-95">
+    <div class="modal" role="dialog" aria-modal="true" :aria-label="activeProduct ? activeProduct.title : ''">
+        <header class="modal-head">
+            <h2 class="modal-title" x-text="activeProduct ? activeProduct.title : ''"></h2>
+            <button type="button" class="icon-btn" @click="closeModal()" aria-label="بستن"><svg class="icon"><use href="#i-x"/></svg></button>
+        </header>
+
+        <div class="modal-body">
+            <!-- Gallery -->
+            <div class="gallery">
+                <div class="gallery-main media">
+                    <div class="ph"><svg class="icon"><use href="#i-flower"/></svg></div>
+                    <div class="swiper" dir="rtl" x-ref="swiperEl">
+                        <div class="swiper-wrapper">
+                            <template x-for="(img, i) in (activeProduct ? activeProduct.images : [])" :key="i">
+                                <div class="swiper-slide">
+                                    <div class="slide"><img class="media-img" :src="img" :alt="activeProduct.title" @error="$el.style.display = 'none'"></div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <button type="button" class="nav-btn nav-prev" @click="slidePrev()" aria-label="تصویر قبل"><svg class="icon"><use href="#i-chevron-right"/></svg></button>
+                    <button type="button" class="nav-btn nav-next" @click="slideNext()" aria-label="تصویر بعد"><svg class="icon"><use href="#i-chevron-left"/></svg></button>
+                    <span class="counter" x-text="fa(slideIndex + 1) + ' / ' + fa(activeProduct ? activeProduct.images.length : 0)"></span>
+                </div>
+                <div class="thumbs">
+                    <template x-for="(img, i) in (activeProduct ? activeProduct.images : [])" :key="'t' + i">
+                        <button type="button" class="thumb" :class="{ 'is-active': slideIndex === i }" @click="goSlide(i)" :aria-label="'تصویر ' + fa(i + 1)">
+                            <div class="ph"><svg class="icon"><use href="#i-flower"/></svg></div>
+                            <img class="media-img" :src="img" alt="" @error="$el.style.display = 'none'">
+                        </button>
+                    </template>
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="info" x-show="activeProduct">
+                <span class="info-cat" x-text="activeProduct ? activeProduct.category : ''"></span>
+                <h3 class="info-name" x-text="activeProduct ? activeProduct.title : ''"></h3>
+                <div class="info-price"><small>تومان</small><span x-text="activeProduct ? fa(activeProduct.price) : ''"></span></div>
+                <div>
+                    <p class="info-label">رنگ انتخابی شما<template x-if="selectedColor"><span> : <b x-text="selectedColor.name"></b></span></template></p>
+                    <div class="sw-list" style="margin-top: var(--space-3)">
+                        <template x-for="c in (activeProduct ? activeProduct.colors : [])" :key="c.hex">
+                            <button type="button" class="sw-btn" :class="{ 'is-selected': selectedColor && selectedColor.hex === c.hex }" @click="selectedColor = c" :aria-pressed="selectedColor && selectedColor.hex === c.hex">
+                                <span class="swatch swatch-lg" :style="`background: ${c.hex}`"></span>
+                                <span x-text="c.name"></span>
+                                <span class="hex" x-text="c.hex"></span>
+                            </button>
+                        </template>
+                    </div>
+                </div>
+                <p class="info-desc" x-show="activeProduct && activeProduct.description" x-text="activeProduct ? activeProduct.description : ''"></p>
+            </div>
+        </div>
+
+        <footer class="modal-foot">
+            <a :href="orderLink" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+                <svg class="icon icon-sm"><use href="#i-send"/></svg>سفارش محصول
+            </a>
+        </footer>
+    </div>
+</div>
+
+<script>
+    function shopApp() {
+        let swiperInst = null;
+
+        return {
+            /* ---------- Data ---------- */
+            products: products,
+
+            /* ---------- UI State ---------- */
+            theme: document.documentElement.getAttribute('data-theme') || 'light',
+            menuOpen: false,
+            drawerOpen: false,
+            contactOpen: false,
+            modalOpen: false,
+            openQuick: null,
+            sortOpen: false,
+            menuActive: 'خانه',
+            accOpen: { category: true, color: true },
+
+            /* ---------- Filter State (shared by Quick Filters + All Filters) ---------- */
+            filters: { category: [], color: [] },
+            temp: { category: [], color: [] },
+            defaultOrder: ['category', 'color'],
+            quickOrder: ['category', 'color'],
+            filterDefs: [
+                {
+                    key: 'category', title: 'دسته‌بندی', icon: 'tag', type: 'text',
+                    options: categories.map(c => ({ value: c, label: c })),
+                    test: (p, sel) => sel.includes(p.category)
+                },
+                {
+                    key: 'color', title: 'رنگ', icon: 'palette', type: 'color',
+                    options: colors.map(c => ({ value: c.name, label: c.name, hex: c.hex })),
+                    test: (p, sel) => p.colors.some(c => sel.includes(c.name))
+                }
+            ],
+
+            /* ---------- Sort / Pagination State ---------- */
+            sortKey: 'newest',
+            sortOptions: [
+                { key: 'newest', label: 'جدیدترین' },
+                { key: 'oldest', label: 'قدیمی‌ترین' },
+                { key: 'cheapest', label: 'ارزان‌ترین' },
+                { key: 'expensive', label: 'گران‌ترین' }
+            ],
+            page: 1,
+            perPage: 6,
+            gridKey: 0,
+
+            /* ---------- Modal State ---------- */
+            activeProduct: null,
+            selectedColor: null,
+            slideIndex: 0,
+
+            /* ---------- Static config ---------- */
+            contact: {
+                phone: '+989120000000', phoneLabel: '+98 912 000 0000', whatsapp: '989120000000',
+                telegram: 'Mhsn_8482', instagram: 'Flora_shop', email: 'info@Flora.ir'
+            },
+            menuLinks: [
+                { label: 'خانه', href: '#top', icon: 'home' },
+                { label: 'محصولات', href: '#products', icon: 'flower' }
+            ],
+            occasions: [
+                { label: 'هدیه', icon: 'gift' }, { label: 'سالگرد', icon: 'cake' },
+                { label: 'ولنتاین', icon: 'heart' }, { label: 'عروسی', icon: 'gem' },
+                { label: 'مناسبتی', icon: 'calendar' }, { label: 'دکوراسیون', icon: 'home' }
+            ],
+
+            /* ---------- Init ---------- */
+            init() {
+                this.$watch('filters', () => { this.page = 1; this.gridKey++; });
+                this.$watch('sortKey', () => { this.page = 1; this.gridKey++; });
+                this.$watch('anyOverlay', v => document.body.classList.toggle('is-locked', v));
+                window.addEventListener('keydown', e => { if (e.key === 'Escape') this.closeAll(); });
+            },
+
+            /* ---------- Helpers ---------- */
+            fa(n) { return Number(n).toLocaleString('fa-IR'); },
+            defOf(key) { return this.filterDefs.find(d => d.key === key); },
+            toggleTheme() {
+                this.theme = this.theme === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', this.theme);
+                try { localStorage.setItem('theme', this.theme); } catch (e) {}
+            },
+
+            /* ---------- Overlay control ---------- */
+            get anyOverlay() { return this.menuOpen || this.drawerOpen || this.contactOpen || this.modalOpen; },
+            closeAll() {
+                this.menuOpen = false; this.drawerOpen = false; this.contactOpen = false;
+                this.openQuick = null; this.sortOpen = false;
+                if (this.modalOpen) this.closeModal();
+            },
+
+            /* ---------- Filtering -> Sorting -> Pagination ---------- */
+            matches(p) {
+                return this.filterDefs.every(d => !this.filters[d.key].length || d.test(p, this.filters[d.key]));
+            },
+            get filtered() { return this.products.filter(p => this.matches(p)); },
+            get displayed() {
+                const list = [...this.filtered];
+                switch (this.sortKey) {
+                    case 'oldest': return list.sort((a, b) => a.id - b.id);
+                    case 'cheapest': return list.sort((a, b) => a.price - b.price);
+                    case 'expensive': return list.sort((a, b) => b.price - a.price);
+                    default: return list.sort((a, b) => b.id - a.id);
+                }
+            },
+            get currentSort() { return this.sortOptions.find(s => s.key === this.sortKey); },
+            get totalPages() { return Math.max(1, Math.ceil(this.displayed.length / this.perPage)); },
+            get pageItems() { const s = (this.page - 1) * this.perPage; return this.displayed.slice(s, s + this.perPage); },
+            get pages() {
+                const t = this.totalPages, c = this.page;
+                if (t <= 7) return Array.from({ length: t }, (_, i) => i + 1);
+                const nums = [...new Set([1, t, c - 1, c, c + 1])].filter(n => n >= 1 && n <= t).sort((a, b) => a - b);
+                const out = [];
+                nums.forEach((n, i) => { if (i && n - nums[i - 1] > 1) out.push('…'); out.push(n); });
+                return out;
+            },
+            goPage(n) {
+                if (n < 1 || n > this.totalPages) return;
+                this.page = n; this.gridKey++;
+                this.$nextTick(() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' }));
+            },
+
+            /* ---------- Quick filters (single select) ---------- */
+            isActive(key) { return this.filters[key].length > 0; },
+            get activeCount() { return this.filterDefs.reduce((n, d) => n + this.filters[d.key].length, 0); },
+            chipLabel(key) {
+                const sel = this.filters[key], title = this.defOf(key).title;
+                if (!sel.length) return title;
+                return sel.length === 1 ? `${title} : ${sel[0]}` : `${title} : ${sel[0]} +${this.fa(sel.length - 1)}`;
+            },
+            toggleQuick(key) { this.sortOpen = false; this.openQuick = this.openQuick === key ? null : key; },
+            quickSelect(key, value) {
+                this.filters = { ...this.filters, [key]: [value] };
+                this.openQuick = null;
+                this.reorderQuick(key);
+            },
+            clearFilter(key) {
+                this.filters = { ...this.filters, [key]: [] };
+                this.openQuick = null;
+                this.reorderQuick();
+            },
+            reorderQuick(justKey) {
+                const first = justKey && this.isActive(justKey) ? [justKey] : [];
+                const active = this.quickOrder.filter(k => this.isActive(k) && k !== justKey);
+                const rest = this.defaultOrder.filter(k => !first.includes(k) && !active.includes(k));
+                this.quickOrder = [...first, ...active, ...rest];
+                this.$nextTick(() => this.$refs.filterBar.scrollTo({ left: 0, behavior: 'smooth' }));
+            },
+            clearAll() {
+                this.filters = { category: [], color: [] };
+                this.reorderQuick();
+            },
+
+            /* ---------- All filters drawer (multi select) ---------- */
+            openDrawer() {
+                this.temp = { category: [...this.filters.category], color: [...this.filters.color] };
+                this.openQuick = null; this.sortOpen = false;
+                this.drawerOpen = true;
+            },
+            get tempCount() { return this.filterDefs.reduce((n, d) => n + this.temp[d.key].length, 0); },
+            toggleTemp(key, value) {
+                const cur = this.temp[key];
+                this.temp[key] = cur.includes(value) ? cur.filter(v => v !== value) : [...cur, value];
+            },
+            clearTemp() { this.temp = { category: [], color: [] }; },
+            applyFilters() {
+                this.filters = { category: [...this.temp.category], color: [...this.temp.color] };
+                this.drawerOpen = false;
+                this.reorderQuick();
+            },
+
+            /* ---------- Product modal + Swiper ---------- */
+            openProduct(p) {
+                this.activeProduct = p;
+                this.selectedColor = p.colors[0] || null;
+                this.slideIndex = 0;
+                this.modalOpen = true;
+                this.$nextTick(() => this.initSwiper());
+            },
+            closeModal() {
+                this.modalOpen = false;
+                setTimeout(() => { if (!this.modalOpen && swiperInst) { swiperInst.destroy(true, true); swiperInst = null; } }, 300);
+            },
+            initSwiper() {
+                if (swiperInst) swiperInst.destroy(true, true);
+                swiperInst = new Swiper(this.$refs.swiperEl, {
+                    grabCursor: true, observer: true, observeParents: true,
+                    on: { slideChange: s => { this.slideIndex = s.activeIndex; } }
+                });
+            },
+            slidePrev() { if (swiperInst) swiperInst.slidePrev(); },
+            slideNext() { if (swiperInst) swiperInst.slideNext(); },
+            goSlide(i) { if (swiperInst) swiperInst.slideTo(i); },
+
+            /* ---------- Telegram order ---------- */
+            get orderLink() {
+                const p = this.activeProduct;
+                if (!p) return '#';
+                const lines = ['سلام 🌸', `از محصول «${p.title}» خوشم اومده.`, `دسته‌بندی: ${p.category}`];
+                if (this.selectedColor) lines.push(`رنگ مورد نظر: ${this.selectedColor.name}`);
+                lines.push('لطفاً برای ثبت سفارش راهنمایی کنید.');
+                return `https://t.me/${this.contact.telegram}?text=${encodeURIComponent(lines.join('\n'))}`;
+            },
+            get customOrderLink() {
+                const msg = 'سلام 🌸\nمی‌خوام یک دسته گل بافتنی اختصاصی سفارش بدم. لطفاً راهنمایی کنید.';
+                return `https://t.me/${this.contact.telegram}?text=${encodeURIComponent(msg)}`;
+            }
+        };
+    }
+</script>
+</body>
+</html>
